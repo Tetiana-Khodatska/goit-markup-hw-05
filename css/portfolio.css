@@ -78,11 +78,45 @@ img {
 }
 
 /* progects */
+.progect_img {
+  position: relative;
+  overflow: hidden;
+}
+
 .progect_text {
   border: 1px solid #eeeeee;
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.progect_img::before {
+  display: inline-block;
+  position: absolute;
+  content: "";
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(calc(0% + 200px));
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progect_item:hover .progect_img::before {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.progect_item:hover .progect-desc {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.progect_item:hover {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
 }
 
 .progect_list {
@@ -97,12 +131,13 @@ img {
 .progect_item {
   margin: 0;
   padding: 0;
-  /* padding-top: 34px; */
   width: calc((100% - 60px) / 3);
+  position: relative;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .progect_item:not(:nth-last-child(-n + 3)) {
-  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .progect_item:not(:nth-child(3n)) {
@@ -128,4 +163,25 @@ img {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+
+.progect-desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+  color: var(--primary-white-color);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+
+  opacity: 0;
+  transform: translateY(calc(0% + 150px));
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
