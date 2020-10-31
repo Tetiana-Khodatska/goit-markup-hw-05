@@ -1,0 +1,131 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow: hidden;
+}
+
+/* button */
+
+.portfolio_title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.portfolio_container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1200px;
+  outline: 2px solid tomato;
+  display: block;
+  align-items: center;
+  border-bottom: 1px solid var(--line-color);
+}
+
+.button {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.button_item {
+  background-color: var(--second-fon-color);
+}
+
+.button_item--list {
+  color: var(--primary-text-color);
+  /* background-color: var(--second-fon-color); */
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+}
+
+.button_item--list:hover,
+.button_item--list:focus {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+.button_item--list:hover,
+.button_item--list:focus {
+  color: var(--primary-white-color);
+}
+
+.button_item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* progects */
+.progect_text {
+  border: 1px solid #eeeeee;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.progect_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: green; */
+}
+
+.progect_item {
+  margin: 0;
+  padding: 0;
+  /* padding-top: 34px; */
+  width: calc((100% - 60px) / 3);
+}
+
+.progect_item:not(:nth-last-child(-n + 3)) {
+  padding-bottom: 30px;
+}
+
+.progect_item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.progect_name {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.progect_title {
+  margin: 0;
+  padding: 0;
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
