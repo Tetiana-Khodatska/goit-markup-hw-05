@@ -28,7 +28,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   display: block;
   align-items: center;
   border-bottom: 1px solid var(--line-color);

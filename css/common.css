@@ -230,10 +230,12 @@ a {
 
 .navigation_info_item--mail {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .navigation_info_item--phone {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .navigation_info_item:hover,
