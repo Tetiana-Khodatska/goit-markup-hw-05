@@ -437,16 +437,18 @@ a {
   display: flex;
   justify-content: center;
   width: calc((100% - 150px) / 6);
-  height: 90px;
-  align-items: center;
-  border: 1px solid var(--title-text-color);
-  border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .regular-clients__link {
   color: #afb1b8;
-  padding: 20px 60px;
+  width: 170px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--title-text-color);
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .regular-clients__link:hover {
@@ -460,7 +462,6 @@ a {
 
 .regular-clients__link:focus {
   width: 170px;
-  height: 90px;
   color: var(--accent-color);
   border-color: var(--accent-color);
   border-radius: 4px;
