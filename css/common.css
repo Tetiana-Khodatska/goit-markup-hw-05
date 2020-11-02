@@ -37,7 +37,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--line-color);
@@ -189,15 +189,23 @@ a {
   padding: 0;
 }
 
+.navigation_info_item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 .navigation_info_item:not(:last-child) {
   margin-right: 30px;
 }
 
 .navigation_mail,
 .navigation_tel {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 
   color: var(--title-text-color);
   font-weight: 500;
@@ -219,15 +227,15 @@ a {
   color: var(--accent-color);
 }
 
-.navigation_info_item__icon--mail {
+.navigation_info_item--mail {
   width: 16px;
-  height: 11.2px;
+  height: 12px;
   margin-right: 10px;
 }
 
 .navigation_info_item--phone {
   width: 10px;
-  height: 14.94px;
+  height: 16px;
   margin-right: 10px;
 }
 
@@ -290,7 +298,7 @@ a {
   padding-top: 60px;
   padding-bottom: 60px;
   width: 1200px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   display: flex;
   align-items: baseline;
   border-bottom: 1px solid var(--line-color);
