@@ -225,17 +225,14 @@ a {
 .navigation_tel:hover,
 .navigation_tel:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .navigation_info_item--mail {
-  width: 16px;
-  height: 12px;
   margin-right: 10px;
 }
 
 .navigation_info_item--phone {
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
 }
 
@@ -363,4 +360,10 @@ a {
 
 .add-sotial-site__item:hover {
   background-color: var(--accent-color);
+}
+
+.add-social-site__socials:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: var(--primary-white-color);
 }
