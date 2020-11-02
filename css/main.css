@@ -441,6 +441,7 @@ a {
   align-items: center;
   border: 1px solid var(--title-text-color);
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .regular-clients__link {
@@ -458,6 +459,8 @@ a {
 }
 
 .regular-clients__link:focus {
+  width: 170px;
+  height: 90px;
   color: var(--accent-color);
   border-color: var(--accent-color);
   border-radius: 4px;
