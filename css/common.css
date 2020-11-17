@@ -375,6 +375,6 @@ a {
 
 .add-social-site__socials:focus {
   background-color: var(--accent-color);
-  border-radius: 50%;
+  /* border-radius: 50%; */
   fill: var(--primary-white-color);
 }
